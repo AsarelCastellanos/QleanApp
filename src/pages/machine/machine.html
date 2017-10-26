@@ -1,0 +1,89 @@
+<ion-header>
+
+  <ion-navbar>
+    
+    <ion-title class="title" color="main">Select Machine</ion-title>
+    <!-- <button ion-button secondary (click)="load()" class="start">Start</button>  -->
+    <button ion-button secondary icon-only menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+ 
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+ <!-- <h5>In use </h5>
+  <h5>Free</h5>
+    <div class="abs">
+        <img src="assets/img/icons.png">
+    </div> -->
+
+  <h1 id="ffff">Washers</h1>
+  <br>
+  <br>
+    <ion-item>
+      <ion-label>Selected</ion-label>
+    <ion-select [(ngModel)]="washer">
+      <ion-option value="0">0</ion-option>
+      <ion-option value="1">1</ion-option>
+      <ion-option value="2">2</ion-option>
+      <ion-option value="3">3</ion-option>
+      <ion-option value="4">4</ion-option>
+      <ion-option value="5">5</ion-option>
+      </ion-select>
+  </ion-item>
+
+<!-- <ion-grid>
+  <ion-row>
+    <ion-col col-sm-4><img class="washer" src="assets/img/bluewasher.png"></ion-col>
+    <ion-col col-sm-4><img class="washer" src="assets/img/bluewasher.png"></ion-col>
+    <ion-col col-sm-4><img class="washer" src="assets/img/bluewasher.png"></ion-col>
+    <ion-col col-sm-4><img class="washer" src="assets/img/bluewasher.png"></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-sm-4><img class="washer" src="assets/img/bluewasher.png"></ion-col>
+    <ion-col col-sm-4><img class="washer" src="assets/img/bluewasher.png"></ion-col>
+    <ion-col col-sm-4><img class="washer" src="assets/img/GrayWasher.png"></ion-col>
+    <ion-col col-sm-4><img class="washer" src="assets/img/redwasher.png"></ion-col>
+  </ion-row>
+ <div class="rowBorder"></div>
+</ion-grid> -->
+ 
+<h1 id="ffff">Dryers</h1>
+<br>
+<br>
+<ion-item>
+<h6 id="gggg"></h6>
+    <ion-label>Selected</ion-label>
+  <ion-select [(ngModel)]="dryer">
+    <ion-option value="0">0</ion-option>
+    <ion-option value="1">1</ion-option>
+    <ion-option value="2">2</ion-option>
+    <ion-option value="3">3</ion-option>
+    <ion-option value="4">4</ion-option>
+    <ion-option value="5">5</ion-option>
+    </ion-select>
+</ion-item>
+<br>
+<br>
+<br>
+<br>
+<button id="ffgg" ion-button block (click)="load()">Checkout</button>
+  <!-- <h5>Select Machine</h5>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-sm-4><img class="washer" src="assets/img/Dryer.png"></ion-col>
+        <ion-col col-sm-4><img class="washer" src="assets/img/Dryer.png"></ion-col>
+        <ion-col col-sm-4><img class="washer" src="assets/img/GrayWasher.png"></ion-col>
+        <ion-col col-sm-4><img class="washer" src="assets/img/Dryer.png"></ion-col>
+        </ion-row>
+      <ion-row>
+        <ion-col col-sm-4><img class="washer" src="assets/img/GrayWasher.png"></ion-col>
+        <ion-col col-sm-4><img class="washer" src="assets/img/Dryer.png"></ion-col>
+        <ion-col col-sm-4><img class="washer" src="assets/img/Dryer.png"></ion-col>
+        <ion-col col-sm-4><img class="washer" src="assets/img/Dryer.png"></ion-col>
+      </ion-row>
+      <div class="rowBorder"></div>
+    </ion-grid> -->
+</ion-content>

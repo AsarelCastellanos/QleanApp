@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar color="main">
+    <ion-title class="title">Laundromats</ion-title>
+    <!-- <ion-buttons start> -->
+    <button ion-button secondary icon-only menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <!-- </ion-buttons> -->
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h4 id="gg">Nearby Laundromats</h4>
+
+  <ion-card *ngFor="let place of places" (click)="load(place)">
+
+  <ion-item>
+    <ion-avatar item-start>
+      <img class="pictures"[src]="_DomSanitizationService.bypassSecurityTrustUrl(place.img)" />
+    </ion-avatar>
+    <h2>{{place.name}}</h2>
+    <p>{{place.vicinity}}</p>
+  </ion-item>
+
+  </ion-card>
+<!-- 
+   <ion-card id="card" *ngFor="let place of places" (click)="load(place)">
+<img src="{{place.photos[0].getUrl({maxWidth:200,maxHeight:200})}}"/> -->
+    <!-- <p id="migy">{{place.name}}</p>
+    <p id="gkg">{{place.vicinity}}</p>
+  </ion-card>  --> 
+  <!-- <ion-card id="card" (click)="load()">
+    <p id="migy" name="migy">Laundry Center</p>
+    <p id="gkg" name="gkg">4501 West Martin Luther King Junior Boulevard, Los Angeles</p>
+  </ion-card>
+  <ion-card id="card" (click)="load()">
+    <p id="migy" name="migy">PCY Coin Laundry</p>
+    <p id="gkg" name="gkg">3318 West 8th Street, Los Angeles</p>
+  </ion-card>
+  <ion-card id="card" (click)="load()">
+    <p id="migy" name="migy">Spin Cycle Coin Laundry</p>
+    <p id="gkg" name="gkg">4855 West Pico Boulevard, Los Angeles</p>
+  </ion-card>
+  <ion-card id="card" (click)="load()">
+    <p id="migy" name="migy">Laundry Land Coin Wash</p>
+    <p id="gkg" name="gkg">3724 West Olympic Boulevard, Los Angeles</p>
+  </ion-card>
+  <ion-card id="card" (click)="load()">
+    <p id="migy" name="migy">Spin Coin Laundry</p>
+    <p id="gkg" name="gkg">1517 West Adams Boulevard, Los Angeles</p>
+  </ion-card> -->
+  <!-- <div #map id="map"></div>
+  <div style="width: 100%; height: 60%">
+  </div> -->
+</ion-content>

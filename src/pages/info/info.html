@@ -1,0 +1,81 @@
+<!--
+  Generated template for the InfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="main">
+    <ion-title class="title">Your Machines</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content color="main">
+<ion-list>
+
+    <ion-item *ngFor="let num of washers">
+      <ion-thumbnail item-start>
+        <img src="assets/img/availWasher.png">
+      </ion-thumbnail>
+      <h2>{{start}}</h2>
+       <p>35 min left</p> 
+      <button ion-button clear item-end><img src="assets/img/x.png"></button>
+     </ion-item> 
+
+    <!-- <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/availWasher.png">
+      </ion-thumbnail>
+      <h2>4pm-6pm</h2>
+      <p>available</p>
+       <button ion-button clear item-end><img src="assets/img/x.png"></button>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/availWasher.png">
+      </ion-thumbnail>
+      <h2>7am-8am</h2>
+      <p>3 min left</p>
+       <button ion-button clear item-end><img src="assets/img/x.png"></button>
+      
+    </ion-item> -->
+
+    <ion-item *ngFor="let num of dryers">
+      <ion-thumbnail item-start>
+        <img src="assets/img/availDryer.png">
+      </ion-thumbnail>
+      <h2>{{start}}</h2>
+      <p>35 min left</p>
+       <button ion-button clear item-end><img src="assets/img/x.png"></button>
+      
+    </ion-item>
+
+    <!-- <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/availDryer.png">
+      </ion-thumbnail>
+      <h2>7am-8am</h2>
+      <p>3 min left</p>
+       <button ion-button clear item-end><img src="assets/img/x.png"></button>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/availDryer.png">
+      </ion-thumbnail>
+      <h2>7am-8am</h2>
+      <p>3 min left</p>
+       <button ion-button clear item-end><img src="assets/img/x.png"></button>
+      
+    </ion-item> -->
+
+   
+    
+
+  </ion-list>
+</ion-content>

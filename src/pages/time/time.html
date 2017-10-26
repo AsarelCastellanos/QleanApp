@@ -1,0 +1,49 @@
+
+<ion-header>
+   <ion-navbar color="main">
+     <ion-title class="title">Reserve Machine</ion-title>
+
+     <button ion-button secondary icon-only menuToggle left>
+      <ion-icon name="menu"></ion-icon>
+     </button>
+
+</ion-navbar>
+</ion-header>
+ 
+    
+  
+
+<ion-content>
+  <ion-item class="btns" id="first">    
+  <ion-label ion-button round outline id="start">Choose Day</ion-label>
+  <!-- <ion-label></ion-label> -->
+  <ion-datetime style="position:inherit" displayFormat="MM/DD/YYYY" [(ngModel)]="myDay"></ion-datetime>  
+
+  {{myDay}}
+</ion-item> 
+
+
+
+<ion-item class="btns">   
+    <ion-label ion-button round outline id="time">Start Time</ion-label>
+
+    <ion-datetime style="position:inherit;"displayFormat="h:mm a" [(ngModel)]="myStart"></ion-datetime>  
+
+</ion-item>
+<ion-item class="btns">
+       <ion-label ion-button round outline id="cycle">Type of cycle setting</ion-label>
+  <ion-select  [(ngModel)]="myCycle">
+    <ion-option  value="1 load">1 load</ion-option>
+    <ion-option  value="2 loads">2 loads</ion-option>
+    <ion-option  value="3 loads">3 loads</ion-option>
+    <ion-option  value="4 loads">4 loads</ion-option>
+    <ion-option  value="8 loads">8 loads</ion-option>
+     </ion-select>
+</ion-item>
+    <ion-item class="btns">
+      <!-- <ion-button> -->
+        <button ion-button (click)="load()" class="start-btn">Start</button>
+      <!-- </ion-button> -->
+    </ion-item>
+
+</ion-content>

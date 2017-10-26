@@ -1,0 +1,43 @@
+<ion-header>
+   <ion-navbar color="main">
+    <ion-title>
+      Confirmation Resquest
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <ion-list>
+
+   <ion-item>
+    <ion-label stacked>First Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Last Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Phone Number</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Card Number</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label>Expiration Date</ion-label>
+  <ion-datetime displayFormat=" MMM YY" min="2017"max="2022"   [(ngModel)]="myStart"></ion-datetime> 
+</ion-item>
+  <ion-item>
+    <ion-label stacked>Security Number</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Zip Code</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+ </ion-list>
+  <button ion-button secondary (click)="load()">Submit</button> 
+</ion-content>

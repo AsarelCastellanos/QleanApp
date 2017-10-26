@@ -1,0 +1,63 @@
+page-reserve {
+ background-color: black;
+ .card-md,.card-ios{
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    box-shadow: none !important;
+}
+}
+.bar bar-footer{
+ margin-left: 50px;
+ 
+ text-align: center; 
+ 
+}
+
+.confirm-btn{
+    margin: auto !important;
+    text-align: center;
+    display: block;
+    font-size: 1.6rem !important;
+    padding: 20px 20px 20px 20px !important;
+}
+
+.reserve .label{
+    margin:0;
+    color: red;
+}
+
+.reserve-arrow{
+        line-height: 3px;
+    margin-left: 21px !important;
+    color: #488AFF;
+    font-weight: 800;
+}
+.mini-icon{
+        display: inline-block;
+    width: 25px;
+    vertical-align: middle;
+    margin-left:5px;
+    margin-right: 5px;
+}
+.cost{
+    float: right;
+    line-height: 25px;
+}
+.reserve-title{
+    color: #00A7F3;
+}
+
+.blue{
+    color: #00A7F3;
+}
+
+ion-col span{
+    font-size: 14px;
+}
+
+.total{
+        text-align: center !important;
+    margin-top: 25px !important;
+    margin-bottom: 20px !important;
+}

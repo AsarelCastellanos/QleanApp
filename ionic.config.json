@@ -1,0 +1,8 @@
+{
+  "name": "Comet3",
+  "app_id": "81dcd039",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
